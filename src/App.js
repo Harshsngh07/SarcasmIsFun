@@ -1,24 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
 
 function App() {
+  const [quote, setQuote] = useState("");
+
+  const generateQuote = async (e) => {
+    try {
+      const url = "https://thesimpsonsquoteapi.glitch.me/quotes";
+      const res = await fetch(url);
+      const data = await res.json();
+      setQuote(data[0].quote);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <div className="card">
+        <h3 className="card-content">{quote}</h3>
+      </div>
+      <button type="submit" className="btn" onClick={generateQuote}>
+        New Quote
+      </button>
     </div>
   );
 }

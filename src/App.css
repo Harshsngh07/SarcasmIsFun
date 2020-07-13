@@ -1,38 +1,53 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Pacifico&display=swap");
+
+html {
+  font-family: "Fira Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card {
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.75);
+  background-color: rebeccapurple;
+  color: white;
+  width: 40%;
+  height: 25%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card-content {
+  padding: 3%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: justify;
 }
 
-.App-link {
-  color: #61dafb;
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media only screen and (max-width: 768px) {
+  .card {
+    width: 90%;
+    height: 40%;
   }
 }
