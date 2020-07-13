@@ -16,14 +16,18 @@ function App() {
   };
 
   return (
-    <div className="container">
-      <div className="card">
-        <h3 className="card-content">{quote}</h3>
+    <>
+      <div className="container">
+        <div className="card">
+          <h3 className="card-content">{quote}</h3>
+        </div>
       </div>
-      <button type="submit" className="btn" onClick={generateQuote}>
-        New Quote
-      </button>
-    </div>
+      <div class="wrapper">
+        <a href="#">
+          <span onClick={generateQuote}>New Quote</span>
+        </a>
+      </div>
+    </>
   );
 }
 
