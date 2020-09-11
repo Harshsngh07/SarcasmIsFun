@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import "./App.css";
 
 function App() {
-  const [quote, setQuote] = useState("");
+  const [quote, setQuote] = useState(
+    "When you see a person without a smile, give them one of your"
+  );
 
   const generateQuote = async (e) => {
     try {
