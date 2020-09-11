@@ -1,5 +1,5 @@
-# Quote_Machine
-A react app used to generate random quotes
+# SarcasmIsFun
+A react app which generates sarcastic quotes and facts.
 
 See the live demo
 https://quote-machine-rho.vercel.app/#
