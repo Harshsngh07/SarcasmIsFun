@@ -3,7 +3,7 @@ import "./App.css";
 
 function App() {
   const [quote, setQuote] = useState(
-    "When you see a person without a smile, give them one of your"
+    "When you see a person without a smile, give them one of yours."
   );
 
   const generateQuote = async (e) => {
