@@ -7,13 +7,12 @@
     A react app which generates sarcastic quotes and facts.
 </p>
 
----
+<p align="center"> 
+    <img src="https://images-na.ssl-images-amazon.com/images/I/51iOHje9URL.jpg" width="350" > 
+</p>
 
 ## Live demo
 
 https://quote-machine-rho.vercel.app/#
 
-
-<p align="center"> 
-    <img src="https://images-na.ssl-images-amazon.com/images/I/51iOHje9URL.jpg" width="350" > 
-</p>
+---
